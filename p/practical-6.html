@@ -4,32 +4,80 @@
     <meta charset="UTF-8">
     <title>Practical-6</title>
     <style>
-        .box{
-
+        .box {
+            width: 280px;
+            height: 360px;
+            text-align: justify;
+            background-color: white;
+            margin: 20px 15px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+            border-radius: 7px;
+            float: left;
+            box-shadow:1px 1px 1px 1px darkgrey;
         }
+        p{
+            font-family: Calibri;
+        }
+
+        img{
+            float: left;
+            border-radius: 7px;
+        }
+        a{
+            background-color:red;
+            padding:12px 100px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a:hover {
+            color: white;
+            background-color: blue;
+        }
+
     </style>
 </head>
-<body>
-<h2>PRACTICAL-6:CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h2>
+<body style="background-color: gainsboro;text-align: center">
+<h1 style="color: white;font-family: Calibri">PRACTICAL-6:CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
 <div class="box">
-<img src="img/html.png" alt="not found">
-</div>
-
-<div class="box">
-    <img src="img/css.png" alt="not found">
-
-</div>
-
-<div class="box">
-    <img src="img/jq.png" alt="not found">
-
+<img src="../img/html.png" alt="not found" width="280" height="180">
+    <h3 style="text-align: center">Introduction to HTML</h3>
+   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Autem culpa dignissimos dolores eaque id itaque quaerat
+    quis repellendus ut voluptatibus</p>
+    <p align="center;"><a href="practical-5-html.html"><b>Read More</b></a></p>
 
 </div>
 
 <div class="box">
-    <img src="img/bs.png" alt="not found">
-
+    <img src="../img/css.png" alt="not found" width="280" height="180">
+    <h3 style="text-align: center">Introduction to CSS</h3>
+    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Autem culpa dignissimos dolores eaque id itaque quaerat
+    quis repellendus ut voluptatibus
+    </p>
+    <p align="center;"><a href="practical-5-css.html"><b>Read More</b></a></p>
 </div>
 
+<div class="box">
+    <img src="../img/js.png" alt="not found" width="280" height="180">
+    <h3 style="text-align: center">Introduction to JavaScript </h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Autem culpa dignissimos dolores eaque id itaque quaerat
+    quis repellendus ut voluptatibus
+    </p>
+    <p align="center;"><a href="practical-5-js.html"><b>Read More</b></a></p>
+</div>
+
+<div class="box">
+    <img src="../img/bs.png" alt="not found" width="280" height="180">
+    <h3 style="text-align: center">Introduction to  Bootstrap</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Autem culpa dignissimos dolores eaque id itaque quaerat
+    quis repellendus ut voluptatibus
+    </p>
+    <p align="center;"><a href="practical-5-bootstrap.html"><b>Read More</b></a></p>
+</div>
 </body>
 </html>
