@@ -9,7 +9,7 @@
             margin: 0;
         }
         .container{
-
+            width: 100%;
         }
         #header{
             margin: 10px;
@@ -21,65 +21,72 @@
             padding-top: 15px;
             font-size: x-large;
         }
-        #banner{
+
+        #banner {
             background-color: deepskyblue;
             margin: 10px;
             color: white;
             text-align: center;
-            font-family:Calibri,sans-serif;
+            font-family: Calibri, sans-serif;
             height: 300px;
             padding-top: 185px;
             font-size: x-large;
         }
-        #footer{
+
+        .section2 {
+            width: 100%;
+            height: 400px;
+        }
+
+        #footer {
             margin: 10px;
             background-color: plum;
             color: white;
             text-align: center;
-            font-family:Calibri,sans-serif;
+            font-family: Calibri, sans-serif;
             height: 50px;
             padding-top: 15px;
             font-size: x-large;
         }
-        #circles{
-
+        #circles {
+            width: 100%;
+            height: 300px;
         }
-        #circle1{
+        #circle1 {
             border: 2px solid brown;
             border-radius: 50%;
-            margin: 69px;
+            margin: 60px;
             background-color: brown;
-            height: 190px;
-            width:190px;
-            float:left;
+            height: 200px;
+            width: 15%;
+            float: left;
         }
-        #circle2{
+        #circle2 {
             border: 2px solid brown;
             border-radius: 50%;
-            margin: 69px;
+            margin: 60px;
             background-color: brown;
-            height: 190px;
-            width:190px;
-            float:left;
+            height: 200px;
+            width: 15%;
+            float: left;
         }
-        #circle3{
+        #circle3 {
             border: 2px solid brown;
             border-radius: 50%;
-            margin: 69px;
+            margin: 60px;
             background-color: brown;
-            height: 190px;
-            width:190px;
-
-            float:left;
+            height: 200px;
+            width: 15%;
+            float: left;
         }
-        #circle4{
+        #circle4 {
             border: 2px solid brown;
             border-radius: 50%;
-            margin: 69px;
+            margin: 60px;
             background-color: brown;
-            height: 190px;
-            width:190px;
-            float:left;
+            height: 200px;
+            width: 15%;
+            float: left;
         }
         #main-content{
             float:left;
@@ -126,22 +133,29 @@
             margin: 10px;
             color: white;
             text-align: center;
-            font-family:Calibri,sans-serif;
-            width:45%;
-            height:80px;
+            font-family: Calibri, sans-serif;
+            width: 45%;
+            height: 80px;
             padding-top: 32px;
             font-size: x-large;
         }
-        #box1{
-            background-color: orangered;
-            float:left;
-            margin: 33px;
-            width:20%;
-            height:275px;
+
+        .boxes {
+            width: 100%;
+            height: 400px;
         }
-        #box2{
+
+        #box1 {
             background-color: orangered;
-            float:left;
+            float: left;
+            margin: 33px;
+            width: 20%;
+            height: 275px;
+        }
+
+        #box2 {
+            background-color: orangered;
+            float: left;
             margin: 33px;
             width:20%;
             height:275px;
@@ -168,6 +182,7 @@
         <div id="header"> Header </div>
         <div id="banner">Banner</div>
     </div>
+
     <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align: center"><b>Section-1</b></p>
     <div id="circles">
         <div id="circle1"></div>
@@ -177,7 +192,7 @@
     </div>
 
     <div class="section2">
-        <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align: center"><b>Section-2</b></p>
+        <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align: center;"><b>Section-2</b></p>
         <div id="main-content">
             Main Content
         </div>
@@ -188,15 +203,16 @@
         </div>
     </div>
     <div>
-        <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align:right;"><b>Section-3</b></p>
-        <div>
+
+        <div class="boxes">
+            <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align: right;"><b>Section-3</b></p>
             <div id="box1"></div>
             <div id="box2"></div>
             <div id="box3"></div>
             <div id="box4"></div>
         </div>
     </div>
-    <p style="font-size: x-large;font-family:Calibri, sans-serif;text-align: center"><b>Section-4</b></p>
+    <div style="font-size: x-large;font-family:Calibri, sans-serif;text-align: center"><b>Section-4</b></div>
     <div id="footer">
         Footer
     </div>
