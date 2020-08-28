@@ -72,7 +72,7 @@
             padding-right: 20px;
         }
 
-        #banner {
+        #content {
             width: 100%;
             margin-top: 90px;
             height: 680px;
@@ -82,12 +82,12 @@
             color: white;
         }
 
-        #banner {
+        #content {
             background-image: url(../img/first.png);
             background-size: cover;
         }
 
-        #banner h2 {
+        #content h2 {
             margin: 20px 20px;
             color: #fff;
         }
@@ -251,7 +251,7 @@
             padding: 20px;
         }
 
-        /*2nd break point at min->800px and max->1199px */
+        /*1st break point at min->800px and max->1199px */
         @media (min-width: 800px) and (max-width: 1199px) {
             .menu {
                 list-style: none;
@@ -306,7 +306,7 @@
                 height: 50px;
             }
 
-            #banner {
+            #content {
                 width: 100%;
                 margin-top: 90px;
                 height: 680px;
@@ -316,13 +316,13 @@
                 color: white;
             }
 
-            #banner {
+            #content {
                 background-image: url(../img/first.png);
                 background-size: cover;
                 background-position: center;
             }
 
-            #banner h2 {
+            #content h2 {
                 margin: 20px 20px;
                 color: #fff;
             }
@@ -465,7 +465,7 @@
                 color: black;
                 font-size: 40px;
                 text-align: center;
-                padding: 25px 0px;
+                padding: 25px 0;
             }
 
             .box a:hover {
@@ -485,7 +485,7 @@
             }
         }
 
-        /*3rd break point at 799px*/
+        /*2rd break point at 799px*/
         @media (max-width: 799px) {
             #header {
                 width: 100%;
@@ -530,7 +530,7 @@
                 top: 10px;
             }
 
-            #banner {
+            #content {
                 width: 100%;
                 height: 350px;
                 margin-bottom: 15px;
@@ -540,7 +540,7 @@
                 margin-top: 90px;
             }
 
-            #banner h2 {
+            #content h2 {
                 margin: 10px 20px;
                 color: #fff;
             }
@@ -560,7 +560,7 @@
                 width: 250px;
                 border-radius: 50%;
                 float: left;
-                margin-left: 30%;
+                margin-left: 10%;
                 margin-bottom: 20px;
             }
 
@@ -633,7 +633,7 @@
             .box {
                 width: 40%;
                 float: left;
-                margin-left: 200px;
+                margin-left: 50px;
                 background-color: dimgrey;
                 border-radius: 8px;
                 margin-bottom: 20px;
@@ -678,6 +678,184 @@
 
         }
 
+        /* 3rd Break-point */
+        @media (max-width: 625px) {
+
+            #container {
+                min-width: 320px;
+            }
+
+            .show-btn {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                background-color: #333;
+                text-align: center;
+                padding: 80px 0;
+                line-height: normal;
+                transition: 0.7s;
+            }
+
+            .menu li {
+                display: block;
+            }
+
+            .manu li a {
+                display: block;
+            }
+
+            #chk:checked ~ .menu {
+                right: 0;
+            }
+
+            .hide-btn {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+
+            #content {
+                width: 100%;
+                height: 250px;
+                margin-bottom: 15px;
+                color: white;
+                margin-top: 90px;
+            }
+
+            #content h2 {
+                margin: 10px 20px;
+                color: #fff;
+                font-size: 20px;
+            }
+
+            #circles {
+                width: 80%;
+                margin-left: 2%;
+            }
+
+            .circle img {
+                height: 70%;
+                width: 70%;
+
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            #left-side {
+                width: 100%;
+                height: 200px;
+                background-color: gray;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            #left-p h2 {
+                text-align: left;
+                margin: 5px 5px;
+            }
+
+            #left-p p {
+                font-size: 20px;
+                padding: 10px;
+                text-align: justify;
+                line-height: 28px;
+            }
+
+            #right-content {
+                width: 100%;
+                height: 400px;
+            }
+
+            .artical {
+                box-sizing: border-box;
+                height: 31%;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                overflow: hidden;
+            }
+
+            #p1 {
+                background-image: url(../img/p1.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #p2 {
+                background-image: url(../img/p2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #p3 {
+                background-image: url(../img/p3.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #boxes {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .box {
+                margin-left: 20px;
+                width: 90%;
+                background-color: lightgrey;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+                max-height: 500px;
+            }
+
+            .box img {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 20px;
+            }
+
+            .box h4 {
+                margin: 0 10px;
+                text-align: center;
+            }
+
+            .box p {
+                margin: 10px;
+                font-size: 15px;
+                text-align: justify;
+                line-height: 25px;
+                color: white;
+            }
+
+            .box a {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                color: #fff;
+                background-color: red;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+            h1 {
+                color: black;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 15px;
+            }
+        }
+
     </style>
 </head>
 
@@ -688,7 +866,7 @@
         <label class="show-btn" for="chk">
             <i class="fa fa-bars"></i>
         </label>
-        <ul class="menu">
+        <ul class="menu" style="font-family: Calibri, sans-serif">
             <li><a href="#top">Home</a></li>
             <li><a href="#about-us">About</a></li>
             <li><a href="#circles">Team</a></li>
@@ -702,7 +880,7 @@
     </div>
     <a id="top"></a>
 
-    <div id="banner">
+    <div id="content">
         <h3 style="font-family: Calibri, sans-serif">Practical-9</h3>
     </div>
     <div id="circles">
@@ -810,7 +988,7 @@
     <h1>Contact</h1>
     <div id="footer">
         <p>
-            Website Template for Practical-9 &copy;
+            Website Template for Practical-9 &copy
             <a href="https://beta-labs.in">Beta-labs</a><br/><br/>
             <a href="#top">Back to top</a>
         </p>
