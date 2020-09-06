@@ -18,12 +18,14 @@
 
         body {
             background-color: darkgrey;
-            border-collapse: collapse;
+
         }
 
         .first {
             background-color: #c7ff9c;
-            border-collapse: collapse;
+            /*border-spacing: 0;*/
+
+            /*border-collapse: collapse;*/
         }
 
         .second {
@@ -43,9 +45,22 @@
             margin-left: 380px;
             padding: 10px;
             width: 600px;
-            height: 600px;
+            height: 610px;
             text-align: center;
             background-color: white;
+            border-collapse: collapse;
+            /*border:blue;*/
+
+        }
+
+        table td, th {
+            padding: 8px 5px;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+
+        table tr:nth-child(2n+1) {
+            background-color: #efe6e6;
         }
 
         .header {
@@ -60,6 +75,10 @@
             font-family: Calibri, sans-serif;
             height: 75px;
 
+        }
+
+        .S-Header i {
+            margin-right: 7px;
         }
 
         .T-header {
@@ -82,6 +101,10 @@
             border-radius: 9px;
         }
 
+        .Sign-Up a:hover {
+            background-color: red;
+        }
+
         .Check {
             color: #12b45a;
         }
@@ -92,6 +115,7 @@
     </style>
 </head>
 <body>
+
 <table>
     <colgroup>
         <col class="first">
@@ -101,7 +125,7 @@
     </colgroup>
     <tr>
         <th class="header" colspan="4">
-            SELECT YOUR PLAN
+            <h3> SELECT YOUR PLAN</h3>
         </th>
 
     </tr>
@@ -147,7 +171,7 @@
         <td class="Check"><i aria-hidden="true" class="fa fa-check"></i></td>
         <td class="Check"><i aria-hidden="true" class="fa fa-check"></i></td>
     </tr>
-    <tr>>
+    <tr>
         <td class="Times"><i aria-hidden="true" class="fa fa-times"></i></td>
         <td class="Check"><i aria-hidden="true" class="fa fa-check"></i></td>
         <td class="Check"><i aria-hidden="true" class="fa fa-check"></i></td>
