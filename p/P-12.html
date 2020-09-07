@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Practical-12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Calibri, sans-serif;
+        }
+
+        body {
+            min-width: 100%;
+            background-color: lightgray;
+        }
+
+        .wrapper {
+            width: 600px;
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+
+        .custom-table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .first {
+            background-color: #c7ff9c;
+        }
+
+        .second {
+            background-color: #92f192;
+        }
+
+        .third {
+            background-color: #8aded4;
+        }
+
+        .fourth {
+            background-color: #b3cfec;
+        }
+
+        .custom-table td, .custom-table th {
+            width: 150px;
+            padding: 8px 5px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-right: 2px solid white;
+
+        }
+
+        .custom-table th {
+            height: 70px;
+            color: #64548f;
+            font-size: 28px;
+        }
+
+        i {
+            color: #64548f;
+            font-size: 28px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
+            background-color: #edf3e2;
+        }
+
+        tfoot tr {
+            line-height: 70px;
+            margin-bottom: 10px;
+        }
+
+        tbody tr:first-child td {
+            font-size: 20px;
+            color: green;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #645485;
+            padding: 15px 25px;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        a:hover {
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h2>SELECT YOUR PLAN</h2>
+    <table class="custom-table">
+        <colgroup class="first"></colgroup>
+        <colgroup class="second"></colgroup>
+        <colgroup class="third"></colgroup>
+        <colgroup class="fourth"></colgroup>
+        <thead>
+        <tr>
+            <th><i aria-hidden="true" class="fa fa-building"></i>Basic</th>
+            <th><i aria-hidden="true" class="fa fa-superpowers"></i>Plus</th>
+            <th><i aria-hidden="true" class="fa fa-telegram"></i>Deluxe</th>
+            <th><i aria-hidden="true" class="fa fa-tachometer"></i>Pro</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Rs.500/-</td>
+            <td>Rs.1500/-</td>
+            <td>Rs.2500/-</td>
+            <td>Rs.3500/-</td>
+        </tr>
+        <tr>
+            <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>3 Users</td>
+            <td>5 Users</td>
+            <td>10 Users</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>50 MB</td>
+            <td>250MB</td>
+            <td>1GB</td>
+            <td>5GB</td>
+        </tr>
+        <tr>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+        </tr>
+        <tr>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/cross.png">
+            </td>
+            <td>
+                <img alt=" " src="../img/tick.png">
+            </td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+        <tr>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
