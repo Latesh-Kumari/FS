@@ -58,15 +58,28 @@
             width: 20%;
         }
 
-        .login1_container h2 {
+        .login1_container {
             text-align: center;
-        }
-
-        .first-container {
-            margin: 20px;
-            border-radius: 10px;
+            background-color: pink;
+            height: 80px;
+            display: flex;
 
         }
+
+        .login1_container ul {
+            list-style: none;
+        }
+
+        .login1_container ul li {
+            display: inline-block;
+            width: 20%;
+        }
+
+        .login1_container ul li a i {
+            color: white;
+        }
+
+
     </style>
 </head>
 <body>
@@ -74,7 +87,13 @@
 <div class="first-container">
     <form action="#">
         <div class="login1_container">
-            <h2>Log in</h2>
+            Log in
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+
+            </ul>
         </div>
         <div class="first-login">
             <label for="uname"></label>
