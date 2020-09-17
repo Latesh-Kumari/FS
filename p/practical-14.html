@@ -16,7 +16,7 @@
             background-color: gainsboro;
         }
 
-        p {
+        #heading {
             color: red;
             font-weight: bold;
             font-size: 70px;
@@ -25,31 +25,74 @@
             font-family: Calibri, sans-serif;
         }
 
+        form {
+            border: 3px solid #f1f1f1;
+        }
 
+        input[type=email], input[type=password] {
+            width: 50%;
+            padding: 12px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            border-bottom: 1px solid grey;
+            /*box-sizing: border-box;*/
+        }
+
+        button {
+            background-color: #26272b;
+            color: white;
+            padding: 10px 7px;
+            margin: 8px 0;
+            border: none;
+            width: 30%;
+            border-radius: 12%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .first-container {
+            background-color: white;
+            width: 20%;
+        }
+
+        .login1_container h2 {
+            text-align: center;
+        }
+
+        .first-container {
+            margin: 20px;
+            border-radius: 10px;
+
+        }
     </style>
 </head>
 <body>
-<p>FORM TEMPLATES</p>
-<div class="container">
-
-    <form>
-        <div class="first-header">
-            <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
+<div id="heading">FORM TEMPLATES</div>
+<div class="first-container">
+    <form action="#">
+        <div class="login1_container">
+            <h2>Log in</h2>
         </div>
-        <label>
-            <input placeholder="Your email" type="text">
-        </label>
-        <label>
-            <input placeholder="Your password" type="password">
-        </label>
-    </form>
+        <div class="first-login">
+            <label for="uname"></label>
+            <input id="uname" placeholder="Your email" required type="email">
+            <br>
+            <label for="psw"></label>
+            <input id="psw" placeholder="Your password" required type="password">
+            <br>
 
+            <p style="text-align: right"> forgot <a href="#"
+                                                    style="font-weight: bold;color: black;text-decoration: none ">Password?</a>
+            </p><br>
+            <br>
+            <button type="submit">LOG IN</button>
+
+        </div>
+        Don't have an account? <a href="#" style="text-decoration: none;font-weight: bold;color:black">sign up</a>
+    </form>
 </div>
 </body>
 </html>
