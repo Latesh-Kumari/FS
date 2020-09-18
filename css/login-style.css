@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    color: red;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Calibri, sans-serif;
+}
+
+.wrapper {
+    width: 330px;
+    height: 390px;
+    background-color: white;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    padding: 20px 30px;
+    /*position: absolute;*/
+    /*box-sizing: border-box;*/
+    /*transform: translate(-50%,-50%);*/
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 6px;
+
+
+}
+
+.wrapper input {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.wrapper input[type="email"], .wrapper input[type="password"] {
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    height: 62px;
+    font-size: 14px;
+}
+
+.wrapper input[type="submit"] {
+    border: none;
+    height: 40px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.wrapper input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.wrapper a {
+    font-size: 15px;
+    text-decoration: none;
+    color: brown;
+
+}
+
+.wrapper a:hover {
+    color: dodgerblue;
+}
+
+.bottom-text input {
+    width: 35%;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.bottom-text p {
+    color: darkgrey;
+    float: right;
+    font-size: 13px;
+
+}
+
+.bottom-text p a {
+
+    font-weight: bold;
+    color: #2f3640;
+    font-size: 13px;
+}
+
+.socials {
+    /*margin-top: 7%;*/
+    text-align: center;
+    background-image: linear-gradient(to left, red, yellow);
+
+}
+
+.socials a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*border: 1px solid burlywood;*/
+    /*border-radius: 50%;*/
+    margin: 0 5px;
+}
+
+.socials a i {
+    /*padding: 8px 0;*/
+    color: white;
+}

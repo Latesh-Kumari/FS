@@ -5,115 +5,29 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>login From</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: gainsboro;
-        }
-
-        #heading {
-            color: red;
-            font-weight: bold;
-            font-size: 70px;
-            text-align: center;
-            margin-top: 20px;
-            font-family: Calibri, sans-serif;
-        }
-
-        form {
-            border: 3px solid #f1f1f1;
-        }
-
-        input[type=email], input[type=password] {
-            width: 50%;
-            padding: 12px 10px;
-            margin: 8px 0;
-            display: inline-block;
-            border: none;
-            border-bottom: 1px solid grey;
-            /*box-sizing: border-box;*/
-        }
-
-        button {
-            background-color: #26272b;
-            color: white;
-            padding: 10px 7px;
-            margin: 8px 0;
-            border: none;
-            width: 30%;
-            border-radius: 12%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .first-container {
-            background-color: white;
-            width: 20%;
-            margin-top: 40px;
-            margin-left: 30px;
-        }
-
-        .login1_container {
-            text-align: center;
-            background-color: pink;
-            height: 90px;
-            display: flex;
-
-        }
-
-        .login1_container ul {
-            list-style: none;
-        }
-
-        .login1_container ul li {
-            display: inline-block;
-            width: 20%;
-        }
-
-        .login1_container ul li a i {
-            color: white;
-        }
-
-
-    </style>
+    <link href="../css/login-style.css" rel="stylesheet">
 </head>
 <body>
 <div id="heading">FORM TEMPLATES</div>
-<div class="first-container">
+<div class="wrapper">
+    <div class="socials">
+        <span style="display: block;padding:20px;color: white;font-weight: bold ">Log in</span>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+
+    </div>
     <form action="#">
-        <div class="login1_container">
-           <h2 style="font-weight: bold;color: white"> Log in</h2>
-            <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google"></i></a></li>
+        <input placeholder="Your email" type="email">
+        <input placeholder="Your password" type="password">
 
-            </ul>
-        </div>
-        <div class="first-login">
-            <label for="uname"></label>
-            <input id="uname" placeholder="Your email" required type="email">
-            <br>
-            <label for="psw"></label>
-            <input id="psw" placeholder="Your password" required type="password">
-            <br>
-
-            <p style="text-align: right"> forgot <a href="#"
-                                                    style="font-weight: bold;color: black;text-decoration: none ">Password?</a>
-            </p><br>
-            <br>
-            <button type="submit">LOG IN</button>
-
-        </div>
-        Don't have an account? <a href="#" style="text-decoration: none;font-weight: bold;color:black">sign up</a>
     </form>
+    <div class="bottom-text">
+        <p>Forget <a href="#">Password?</a></p>
+        <input type="submit" value="Log in">
+        <p> Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
 </div>
+
 </body>
 </html>
