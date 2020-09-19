@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: gainsboro;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +18,6 @@ body {
 #boxes {
     width: 100%;
     margin: 105px 20px;
-
     /*background-color: #55acee;*/
 }
 
@@ -33,98 +32,126 @@ body {
     height: 360px;
     float: left;
     margin-left: 50px;
-    background-color: pink;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 6px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-/*1st break point at min->800px and max->1199px */
-@media (min-width: 800px) and (max-width: 1199px) {
-    html {
-        scroll-padding-top: 50px;
-        scroll-behavior: smooth;
-    }
-
-    #container {
-        width: 100%;
-    }
-
-    #boxes {
-        width: 100%;
-        margin: 15px auto;
-    }
-
-    #boxes::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    .box {
-        width: 40%;
-        float: left;
-        margin-left: 65px;
-        margin-bottom: 20px;
-        background-color: dimgrey;
-        border-radius: 8px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-    }
-
-    .socials {
-        text-align: center;
-        background-image: linear-gradient(to left, red, yellow);
-
-    }
+.socials {
+    border-radius: 6px;
+    text-align: center;
+    background-image: linear-gradient(to left, red, yellow);
 
 }
 
-/*2rd break point at 799px*/
-@media (max-width: 799px) {
+.socials a {
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 5px;
+}
 
-    #boxes {
-        width: 100%;
-        margin: 15px auto;
-    }
+.socials a i {
+    color: white;
+}
 
-    #boxes::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+.b-socials {
+    text-align: center;
+    background-image: linear-gradient(to left, deepskyblue, whitesmoke);
+    border-radius: 6px;
+    height: 94px;
+    width: 100%;
+}
 
-    .box {
-        width: 40%;
-        float: left;
-        margin-left: 50px;
-        background-color: dimgrey;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-    }
+.b-socials a {
 
+    display: inline-block;
+    margin: 30px 9px;
+}
+
+.b-socials a i {
+    color: white;
+}
+
+.c-socials {
+    text-align: center;
+}
+
+.c-socials a {
+    display: inline-block;
+    margin: 30px 10px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+    padding: 5px 22px;
 
 }
 
-/* 3rd Break-point */
-@media (max-width: 625px) {
+.c-socials a i {
 
-    #container {
-        min-width: 320px;
-    }
+    color: blue;
+}
 
-    #boxes {
-        width: 100%;
-        box-sizing: border-box;
-    }
+.wrapper input {
+    margin-left: 20px;
+    margin-bottom: 20px;
 
-    .box {
-        margin-left: 20px;
-        width: 90%;
-        background-color: lightgrey;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-        max-height: 500px;
-    }
+}
 
+.wrapper input[type="email"], .wrapper input[type="password"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    height: 62px;
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.wrapper input[type="submit"] {
+    outline: none;
+    width: 20%;
+    border: none;
+    height: 28px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 11px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.wrapper p {
+    text-align: right;
+    font-size: 13px;
+    color: darkgrey;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.wrapper p a {
+    text-decoration: none;
+    color: #26272b;
+    font-weight: bold;
+}
+
+.wrapper p a:hover {
+    color: deepskyblue;
+}
+
+#sign-up {
+    background-color: deeppink;
+    margin: 5px 35px;
+    width: 42%;
+    height: 35px;
+}
+
+#sign-in {
+    background-image: linear-gradient(to left, darkblue, blue, skyblue);
+    width: 90%;
+    height: 35px;
 }
