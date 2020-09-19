@@ -6,140 +6,21 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>p9</title>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            background-color: darkgrey;
-        }
-
-        #container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        #boxes {
-            width: 100%;
-            margin: 145px 20px;
-
-            /*background-color: #55acee;*/
-        }
-
-        #boxes::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .box {
-            width: 27%;
-            height: 360px;
-            float: left;
-            margin-left: 50px;
-            background-color: pink;
-            border-radius: 8px;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        /*1st break point at min->800px and max->1199px */
-        @media (min-width: 800px) and (max-width: 1199px) {
-            html {
-                scroll-padding-top: 50px;
-                scroll-behavior: smooth;
-            }
-
-            #container {
-                width: 100%;
-            }
-
-            #boxes {
-                width: 100%;
-                margin: 15px auto;
-            }
-
-            #boxes::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-
-            .box {
-                width: 40%;
-                float: left;
-                margin-left: 65px;
-                margin-bottom: 20px;
-                background-color: dimgrey;
-                border-radius: 8px;
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-            }
-
-
-        }
-
-        /*2rd break point at 799px*/
-        @media (max-width: 799px) {
-
-            #boxes {
-                width: 100%;
-                margin: 15px auto;
-            }
-
-            #boxes::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-
-            .box {
-                width: 40%;
-                float: left;
-                margin-left: 50px;
-                background-color: dimgrey;
-                border-radius: 8px;
-                margin-bottom: 20px;
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-            }
-
-
-        }
-
-        /* 3rd Break-point */
-        @media (max-width: 625px) {
-
-            #container {
-                min-width: 320px;
-            }
-
-            #boxes {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            .box {
-                margin-left: 20px;
-                width: 90%;
-                background-color: lightgrey;
-                border-radius: 8px;
-                margin-bottom: 20px;
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-                max-height: 500px;
-            }
-
-        }
-
-    </style>
+    <link href="../css/stylelogin.css" rel="stylesheet">
 </head>
 
 <body>
+<h1 style="color: red;font-size:50px;text-align: center;">FORM TEMPLATES</h1>
 <div id="container">
     <div id="boxes">
         <div class="box">
+            <div class="socials">
+                <span style="display: block;padding:20px;color: white;font-weight: bold ">Log in</span>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
 
+            </div>
         </div>
         <div class="box">
 
