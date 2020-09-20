@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <title>p9</title>
-    <link href="../css/stylelogin.css" rel="stylesheet">
+    <title>practical-14</title>
+    <link href="../css/Style14.css" rel="stylesheet">
 </head>
-
 <body>
-<h1 style="color: red;font-size:50px;text-align: center; margin-top: 20px">FORM TEMPLATES</h1>
-<div id="container">
-    <div id="boxes">
-        <div class="box">
-            <div class="socials">
-                <span style="display: block;padding:20px;color: white;font-weight: bold ">Log in</span>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google"></i></a>
-            </div>
-            <div class="wrapper">
-                <form action="#">
-                    <input placeholder="Your email" type="email">
-                    <input placeholder="Your password" type="password">
-                    <p>Forget <a href="#">Password?</a></p>
-                    <input type="submit" value="Log in">
-                    <p> Don't have an account? <a href="#">Sign Up</a></p>
-                </form>
+<header><h1>Form Template</h1></header>
+<div class="main-container">
+    <!--    form template-1-->
+    <div class="form-template1">
+        <div class="form-header-t1">
+            <h1>LOGIN</h1>
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
             </div>
         </div>
-        <div class="box">
-            <h3 style="margin-top: 15px;text-align: center;color: deeppink"> Sign Up</h3>
-            <div class="wrapper">
-                <form action="#">
-                    <input placeholder="Your email" type="email">
-                    <input placeholder="Your password" type="password">
-                    <input id="sign-up" type="submit" value="SIGN UP">
-                    <p> Have an account? <a href="#">Log in</a></p>
-                </form>
-                <div class="b-socials">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-google"></i></a>
-                </div>
+        <div class="form-container-t1">
+            <div>
+                <input id="email" name="email" placeholder="Enter email" type="email">
+            </div>
+            <div>
+                <input id="pwd" name="pwd" placeholder="Enter password" type="password">
+            </div>
+            <p>Forgot<b>Password?</b></p>
+            <input type="submit" value="LOGIN">
+            <p id="p2">Don't have account?<b>Sign Up</b></p>
+        </div>
+        <div class="form-footer-t1"></div>
+    </div>
+    <!--    form template 2-->
+    <div class="form-template2">
+        <div class="form-header-t2">
+            <h1>SIGN UP</h1>
+
+        </div>
+        <div class="form-container-t2">
+            <div>
+                <input id="email" name="email" placeholder="Enter email" type="email">
+            </div>
+            <div>
+                <input id="pwd" name="pwd" placeholder="Enter password" type="password">
+            </div>
+            <input id="chk" name="chk" type="checkbox">
+            <p>Accept the<b>Terms and Conditions</b></p>
+            <input type="submit" value="SIGN UP">
+            <p id="p3">Have an account?<b>Sign Up</b></p>
+        </div>
+        <div class="form-footer-t2">
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
             </div>
         </div>
-        <div class="box">
-            <h3 style="margin-top: 15px;text-align: center;color:black"> Sign Up</h3>
-            <div class="wrapper">
-                <form action="#">
-                    <input placeholder="Your email" type="email">
-                    <input placeholder="Your password" type="password">
-                    <p><a href="#" style="color:deepskyblue">Forgot Password?</a></p>
-                    <input id="sign-in" type="submit" value="SIGN IN">
-                </form>
-                <div class="c-socials">
-                    <span style="display: block;text-align: center;color: grey;font-size: 12px">or Sign in with:</span>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-google"></i></a>
-                </div>
+    </div>
+
+
+    <!--    form template3-->
+    <div class="form-template3">
+        <div class="form-header-t3">
+            <h1>SIGN IN</h1>
+
+        </div>
+        <div class="form-container-t3">
+            <div>
+                <input id="email" name="email" placeholder="Enter email" type="email">
+            </div>
+            <div>
+                <input id="pwd" name="pwd" placeholder="Enter password" type="password">
+            </div>
+            <p>Forgot<b>Password?</b></p>
+            <input type="submit" value="SIGNIN">
+            <p id="p4"><b>Or sign in with</b></p>
+        </div>
+        <div class="form-footer-t3">
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
             </div>
         </div>
+    </div>
 
 </div>
 </body>
-
 </html>
