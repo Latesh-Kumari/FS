@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Counter</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        #neg, #pos {
+            font-size: 30px;
+            margin: 30px;
+            padding: 25px;
+            background-color: deepskyblue;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>COUNTER</h1>
+    <button id="neg">-</button>
+    <p id="counter" style="display: inline-block; font-size: 1cm">0</p>
+    <button id="pos">+</button>
+</div>
+<script language="Javascript" type="text/Javascript">
+    var counter = 0;
+    var button1 = document.getElementById('neg');
+    var button2 = document.getElementById('pos');
+    button1.disabled = true;
+    button1.onclick = function () {
+        counter = counter - 1;
+        document.getElementById('counter').innerHTML = counter;
+        if (counter === 0 || counter < 0) {
+            button1.disabled = true;
+        } else {
+            button1.disabled = false;
+        }
+    };
+    button2.onclick = function () {
+        counter += 1;
+        document.getElementById('counter').innerHTML = counter;
+        if (counter === 0 || counter < 0) {
+            button1.disabled = true;
+        } else {
+            button1.disabled = false;
+        }
+    };
+</script>
+</body>
+</html>
