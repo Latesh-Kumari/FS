@@ -3,7 +3,7 @@ var todoButton = document.querySelector(".todo-button");
 var todoList = document.querySelector(".todo-list");
 
 todoButton.onclick = create;
-todoButton.onclick = checkdelete;
+todoList.onclick = checkdelete;
 
 function create(e) {
     e.preventDefault();
@@ -24,20 +24,19 @@ function create(e) {
     deletebtn.classList.add("delete-btn");
     deletebtn.innerHTML = '<i class="fa fa-trash"></i>';
     newDiv.appendChild(deletebtn);
-
     todoList.appendChild(newDiv);
-
+    todoInput.value = "";
 }
 
 function checkdelete(e) {
     var item = e.target;
     if (item.classList[0] === "delete-btn") {
         var parent = item.parentNode;
-        parent.remove;
+        parent.remove();
     }
     if (item.classList[0] === "check-btn") {
-        var parent = item.parentNode;
-        parent.classList.toggle("completed");
+        var parent1 = item.parentNode;
+        parent1.classList.toggle("completed");
     }
 
 }
