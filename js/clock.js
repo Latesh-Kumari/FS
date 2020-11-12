@@ -27,7 +27,7 @@ function addZero(n) {
 }
 
 function setGreeting() {
-    let today = new Date(2020, 11, 12, 10, 12, 10);
+    let today = new Date();
     let hour = today.getHours();
     if (hour < 12) {
         document.body.style.backgroundSize = "cover";
