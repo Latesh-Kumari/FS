@@ -37,12 +37,12 @@ function setGreeting() {
 
     } else if (hour < 18) {
         document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundImage = 'url("../img/good.jpg")';
+        document.body.style.backgroundImage = 'url("../img/afternoon.jpg")';
         greeting.innerHTML = "Good Afternoon";
 
     } else {
         document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundImage = 'url("../img/eve.jpg")';
+        document.body.style.backgroundImage = 'url("../img/evening.jpg")';
 
         greeting.innerHTML = "Good Evening";
         document.body.style.color = "white";
