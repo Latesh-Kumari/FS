@@ -52,7 +52,7 @@ function checkInput()
     {
         showError(password2,"Password can not be blank");
     }
-    else if(password2Value!==password1Value)
+    else if(password2Value !==password1Value)
     {
         showError(password2,"Password not match");
     }

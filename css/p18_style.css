@@ -18,7 +18,7 @@ body{
     background-color: #ffffff;
     width: 400px;
     border-radius: 5px;
-
+    overflow: hidden;
 }
 .header{
     background-color: #f7f7f7;
