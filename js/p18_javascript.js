@@ -1,9 +1,10 @@
+
 const form= document.getElementById('form');
 const username= document.getElementById('username');
 const email= document.getElementById('email');
 const password1= document.getElementById('password1');
 const password2= document.getElementById('password2');
- small= document.querySelector(small);
+const small= document.querySelector('small');
 
 form.addEventListener('submit',function (e) {
   e.preventDefault();
@@ -75,5 +76,5 @@ function showSuccess(input){
 }
 function isEmailValid(email)
 {
-// return /^([a-zA-Z0-9_\.\-\+]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(email);
+ return /^([a-zA-Z0-9_.\-+]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(email);
 }
