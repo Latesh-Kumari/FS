@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid System</title>
-    <link href="../css/p18_style.css" rel="stylesheet">
-   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap</title>
+    <style>
+        .row {
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
+
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 bg-primary" style="height: 100px;"></div>
+    </div>
+    <div class="row">
+        <div class="col-6 bg-warning" style="height: 212px"></div>
+        <div class="col-6" style="height: 212px; padding-left:25px;">
+            <div class="row bg-danger" style="height: 100px;"></div>
+            <div class="row bg-success" style="height: 100px;"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 bg-dark" style="height: 100px;"></div>
+    </div>
+</div>
 
- <div class="container">
-
-     <div class="row">
-         <div class="col-12 bg-info p-5 " >
-
-         </div>
-     </div>
-
-     <div class="row">
-         <div class="col-6 bg-success p-5 mt-2 ">
-
-         </div>
-         <div class="col-6 bg-primary p-5 mt-2">
-
-         </div>
-
-     </div>
-
-     <div class="row">
-         <div class="col-6 bg-success p-5">
-
-         </div>
-         <div class="col-6 bg-danger p-5 mt-2">
-
-         </div>
-
-     </div>
-
-     <div class="row">
-         <div class="col-12 bg-dark p-5 mt-2">
-
-        <div>
-
-     </div>
- </div>
 </body>
-</html>
